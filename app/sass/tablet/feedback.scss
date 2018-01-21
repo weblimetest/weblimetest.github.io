@@ -20,7 +20,7 @@
 		background-color: $color2;
 		margin-right: 32px;
 		margin-bottom: 32px;
-		transition: background-color 0.1s ease-in;	
+		transition: background-color 0.2s ease-in;	
 
 		&:hover {
 			background-color: $color6;
@@ -31,7 +31,7 @@
 		color: $color1;
 		border: 1px solid $color1;
 		margin-bottom: 56px;
-		transition: background-color 0.1s ease-in;
+		transition: background-color 0.2s ease-in;
 
 		&:hover {
 			background-color: $color7;

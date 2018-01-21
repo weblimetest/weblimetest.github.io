@@ -32,6 +32,7 @@
 
 	&__button { 
 		border: 1px solid $color3;
+		transition: background-color 0.1s ease-in;
 
 		&:hover {
 			background-color: $color2;
@@ -40,7 +41,7 @@
 	}
 
 	&__controls { 
-		@include position (absolute, 36%,0,$n,0);
+		@include position (absolute, 14%,0,$n,0);
 
 		label {
 			cursor: pointer;

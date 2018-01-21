@@ -386,38 +386,7 @@
 	<!-- **********************************************************************************
 		//////////////////////////////  SCRIPTS  //////////////////////////////////////////
 
-	************************************************************************************-->	
-	<script>
-		var md = new MobileDetect(window.navigator.userAgent);
-
-		md.setStyle = function(cssLink) {
-    		var a=document.createElement("link");
-    		a.rel="stylesheet";
-    		a.href=cssLink;
-    		document.getElementsByTagName("head")[0].appendChild(a);
-		};
-
-		if (md.mobile() && md.phone()) {
-    		md.setStyle("css/phone.css");
-		} else if (md.tablet()) {
-    		md.setStyle("css/tablet.css");
-		} else {
-    		md.setStyle("css/desktop.css");
-		};
-	</script>
-	<script>
-		$(function() {
-    		$('a[href*=#]:not([href=#])').click(function() {
-        		var target = $(this.hash);
-        		target = target.length ? target : $('[name=' + this.hash.substr(1) +']');
-        		if (target.length) {
-            		$('html,body').animate({
-              			scrollTop: target.offset().top
-            		}, 1000);
-            		return false;
-        		}
-    		});
-		});
-</script>
+	************************************************************************************-->
+	<script src="js/main.js"></script>
 </body>
 </html>

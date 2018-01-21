@@ -1,6 +1,6 @@
 // ----------- LIBRARIES ----------- 
 
-// ...........mobile-detct..........
+// ...........mobile-detect..........
 
 //= ../libs/mobile-detect/mobile-detect.min.js
 
@@ -13,4 +13,4 @@
 
 // ----------- CUSTOM -------------- 
 
-//= ../js/custom.js
+//= custom.js

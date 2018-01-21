@@ -64,7 +64,6 @@ var path = {
 // HTML building task
 gulp.task('buildHtml', ()=> {
         gulp.src(path.app.html)
-        .pipe(rigger())
         .pipe(gulp.dest(path.dest.html))
         .pipe(reload({stream: true})); 
 });
