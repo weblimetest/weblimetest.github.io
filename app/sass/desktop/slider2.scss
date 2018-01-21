@@ -69,7 +69,7 @@
 #slider2__switch1:checked ~ .slider2__controls label:nth-child(2),
 #slider2__switch2:checked ~ .slider2__controls label:nth-child(3),
 #slider2__switch3:checked ~ .slider2__controls label:nth-child(1) {
-	background: url("../../img/SVG/arrow-3rd-screen-left.svg") no-repeat;
+	background: url("../img/SVG/arrow-3rd-screen-left.svg") no-repeat;
 	float: left;
 	display: block;
 	width: 35px;
@@ -79,7 +79,7 @@
 #slider2__switch1:checked ~ .slider2__controls label:nth-child(3), 
 #slider2__switch2:checked ~ .slider2__controls label:nth-child(1),
 #slider2__switch3:checked ~ .slider2__controls label:nth-child(2) {
-	background: url("../../img/SVG/arrow-3rd-screen-right.svg") no-repeat;
+	background: url("../img/SVG/arrow-3rd-screen-right.svg") no-repeat;
 	float: right;
 	display: block;
 	width: 35px;

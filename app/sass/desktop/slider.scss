@@ -84,7 +84,7 @@
 #slider__switch1:checked ~ .slider__controls label:nth-child(2),
 #slider__switch2:checked ~ .slider__controls label:nth-child(3),
 #slider__switch3:checked ~ .slider__controls label:nth-child(1) {
-	background: url('../../img/SVG/arrow-1st-screen-left.svg') no-repeat;
+	background: url('../img/SVG/arrow-1st-screen-left.svg') no-repeat;
 	float: left;
 	display: block;
 	width: 15px;
@@ -94,7 +94,7 @@
 #slider__switch1:checked ~ .slider__controls label:nth-child(3), 
 #slider__switch2:checked ~ .slider__controls label:nth-child(1),
 #slider__switch3:checked ~ .slider__controls label:nth-child(2) {
-	background: url('../../img/SVG/arrow-1st-screen-right.svg') no-repeat;
+	background: url('../img/SVG/arrow-1st-screen-right.svg') no-repeat;
 	float: right;
 	display: block;
 	width: 15px;
