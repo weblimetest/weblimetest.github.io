@@ -9,15 +9,12 @@
 	}
 
 	&__wrap {
-		@include flexbox (flex-start, $n);
+		@include flexbox (space-between, $n);
 		margin-bottom: 32px;
 	}
 	&__item {
+		width: 320px;
 		background-color: $color3;
-
-		&:nth-child(-n+2) {
-			margin-right: 32px;
-		}
 	}
 
 	&__img {
@@ -63,10 +60,41 @@
 		width: 320px;
 		border: 1px solid $color4;
 		margin: 0 auto;
+		transition: background-color 0.1s ease-in,
+					color 0.1s ease-in;
 
 		&:hover {
 			color: $color3;
 			background-color: $color4;
+		}
+	}
+}
+
+@media screen and (max-width: 1023px) {
+	.articles__wrap {
+		@include flexbox (space-between, center);
+		flex-direction: column;
+	}
+
+	.articles__item:nth-child(-n+2) {
+			margin-bottom: 32px;
+	}
+
+	.articles__title {
+		text-align: center;
+	}
+
+
+}
+
+@media screen and (max-width: 350px) {
+	.articles {
+		&__item {
+	
+		}
+
+		&__button {
+			width: 100%;
 		}
 	}
 }

@@ -1,16 +1,14 @@
 .main-page {
 	background: url("../../img/1st-screen-1920x1080-dark.jpg") no-repeat center center;
 	background-position-y: -50px;
-	margin-top: -61px;
 	height: 670px;
+	position: relative;
 
 	&__arrow {
 		position: absolute;
 		left: 53px;
-    	bottom: 32px;
+    	bottom: 178px;
 	}
 }
-
-
 
 

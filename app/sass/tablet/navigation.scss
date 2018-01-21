@@ -1,17 +1,29 @@
 .navigation {
-	position: sticky;
-	top: 0;
-	z-index: 9999;
+	margin-bottom: 88px;
 	padding-top: 15px;
+
+	&__sticky-col {
+		background-color: $color1;
+	}
 }
 
 .navigation-bar {
 	@include flexbox (flex-start, flex-start);
+	
+	&__logo {
+		margin-right: 32px;
+	}
 
+	&__wrap {
+		@include flexbox (flex-start, flex-start);
+		flex-grow: 1;
+		flex-wrap: wrap;	
+	}
 	&__item {
 		@include text (14px, 300, $color3);
 		text-decoration: none;
 		margin-right: 32px;
+		margin-bottom: 5px;
 
 		&:hover {
 			color: $color2;
@@ -24,12 +36,36 @@
 }
 
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1023px) {
 	.navigation-bar {
-		@include flexbox (space-between, flex-start);
+		&__wrap {
+			@include flexbox (flex-start, flex-start);
+		}
 
 		&__item {
-			margin-right: 0;
+			margin-right: 10px;
 		}
 	}
 }	
+
+@media screen and (max-width: 960px){
+	.navigation-bar {
+		&__logo {
+			margin-right: 16px;
+		}
+
+		&__item {
+			font-size: 11px;
+		}
+	}
+}
+
+@media screen and (max-width: 768px){
+	.navigation-bar {
+
+		&__item {
+			font-size: 10px;
+		}
+	}
+}
+

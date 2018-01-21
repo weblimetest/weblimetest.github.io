@@ -1,7 +1,6 @@
 .slider {
 	position: relative;
 	height: 385px;
-	padding-top: 153px;
 
 	&__overflow {
 		width: 100%;
@@ -41,7 +40,7 @@
 	}
 
 	&__controls { 
-		@include position (absolute, 200px,0,$n,0);
+		@include position (absolute, 36%,0,$n,0);
 
 		label {
 			cursor: pointer;
@@ -76,9 +75,9 @@
 	display: $n;
 }
 #slider__window {
-	width: 90%;
+	max-width: 930px;
 	height: 100%;
-	margin: 0 auto;
+	margin: 0 47px;
 }
 
 #slider__switch1:checked ~ .slider__controls label:nth-child(2),
@@ -87,7 +86,7 @@
 	background: url('../../img/SVG/arrow-1st-screen-left.svg') no-repeat;
 	float: left;
 	display: block;
-	width: 35px;
+	width: 15px;
 	height: 35px;
 }
 
@@ -117,4 +116,31 @@
 	background: $color3;
 	border-color: $color3; 
 	transition: background 1s ease-in-out;
+}
+
+
+@media screen and (max-width: 768px) {
+	.slider {
+		height: 336px;	
+
+		&__title {
+			font-size: 30px;
+		}
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.slider {
+		height: 336px;	
+
+		&__title {
+			font-size: 16px;
+		}
+
+		&__button {
+			width: 160px;
+    		height: 50px;
+    		font-size: 10px; 
+		}
+	}
 }

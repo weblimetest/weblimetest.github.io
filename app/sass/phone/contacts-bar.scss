@@ -1,52 +1,117 @@
 .contacts-bar {
-	@include flexbox (flex-start, center);
-	@include text (12px, 300, $color3)
+	@include flexbox (flex-start, center);	
 	height: 100%;
 
 	&__item {
 		@include flexbox (flex-start, center);
+		box-sizing: border-box;
 		height: 100%;
 		text-align: center;
-		margin-right: 32px;
+		margin-right: 32px; 
 
 		& a:hover {
 			color: #0f745f;
 		}
 	}
 
+	&__link {
+		@include flexbox (flex-start, center);
+		color: $color3;
+		text-decoration: none;
+		height: 100%;
+
+		&--button 	{
+			@include flexbox (center, center);
+			width: 232px;
+			background-color: $color2;
+			margin-left: auto;
+		
+			&:hover {
+				background-color: $color6;
+			}
+	
+			&:hover .contacts-bar__img--hov {
+				display: inline;
+			}
+	
+			&:hover .contacts-bar__img--but {
+				display: $n;
+				background-color: $color6;
+			}
+		}
+	}
+
 	&__img {
 		margin-right: 16px;
+
 
 		&--hov {
 			display: $n;
 		}
-	}
+	}	
+}
 
-	&__button {
-		@include flexbox (center, center);
-		width: 232px;
-		height: 100%;
-		background-color: $color2;
-		margin-left: auto;
-		
-		
-		&:hover {
-			background-color: $color6;
+@media screen and (max-width: 1024px) {
+	.contacts-bar {
+		@include flexbox (space-between, center);
+
+		&__item {
+			margin-right: 0;
 		}
 
-		&:hover .contacts-bar__img--hov {
-			display: inline;
-		}
-
-		&:hover .contacts-bar__img--but {
-			display: $n;
-			background-color: $color6;
+		&__link--button {
+			margin-left: 0;
 		}
 	}
+}	
 
-	& a {
-		color: $color3;
-		text-decoration: none;
+@media screen and (max-width: 960px) {
+	.contacts-bar {
+		&__link {
+			&--button {
+				width: 165px;
+			}
+		}
 	}
 }
 
+@media screen and (max-width: 768px) {
+	.contacts-bar {
+		&__item {
+			
+			& span {
+				display: $n;
+			}
+
+			& .contacts-bar__link {
+				@include flexbox (center, center);
+				width: 85px;
+				height: 30px;
+				border: 1px solid $color4;
+				border-radius: 25px;
+			}
+		}
+
+		&__img {
+			margin-right: 0;
+			&--hov,&--but {
+				margin-right: 8px;	
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.contacts-bar {
+		&__item {
+			 .contacts-bar__link {
+				width: 35px;
+				border-radius: 50%;
+			}
+		}
+
+		&__link--button {
+			width: 140px;
+		}
+	}
+}
