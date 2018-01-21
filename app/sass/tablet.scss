@@ -3,3 +3,47 @@
 @import "helpers/variables.scss";
 @import "helpers/mixins.scss";
 @import "helpers/fonts.scss";
+
+/* --------------------- COMMON ------------------ */
+
+@import "app/sass/tablet/container.scss";
+@import "app/sass/tablet/common-styles.scss";
+@import "app/sass/tablet/button.scss";
+
+
+/* --------------------- HEADER ------------------ */
+
+@import "app/sass/tablet/header.scss";
+@import "app/sass/tablet/contacts-bar.scss";
+
+/* --------------------- NAVIGATION MENU --------- */
+
+@import "app/sass/tablet/navigation.scss";
+
+/* --------------------- MAIN SECTION --------------- */
+
+@import "app/sass/tablet/main-page.scss";
+@import "app/sass/tablet/slider.scss";
+
+/* --------------------- SERVICES SECTION ---------------- */
+
+@import "app/sass/tablet/services.scss";
+@import "app/sass/tablet/services-bar.scss";
+
+/* --------------------- ABOUT US SECTION ---------------- */
+
+@import "app/sass/tablet/about.scss";
+@import "app/sass/tablet/slider2.scss";
+
+/* --------------------- FEEDBACK SECTION ---------------- */
+
+@import "app/sass/tablet/feedback.scss";
+@import "app/sass/tablet/slider3.scss";
+
+/* --------------------- ARTICLES SECTION ---------------- */
+
+@import "app/sass/tablet/articles.scss";
+
+/* --------------------- FOOTER SECTION ---------------- */
+
+@import "app/sass/tablet/footer.scss";

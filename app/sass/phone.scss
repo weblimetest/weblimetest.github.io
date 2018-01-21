@@ -4,3 +4,46 @@
 @import "helpers/mixins.scss";
 @import "helpers/fonts.scss";
 
+/* --------------------- COMMON ------------------ */
+
+@import "app/sass/phone/container.scss";
+@import "app/sass/phone/common-styles.scss";
+@import "app/sass/phone/button.scss";
+
+
+/* --------------------- HEADER ------------------ */
+
+@import "app/sass/phone/header.scss";
+@import "app/sass/phone/contacts-bar.scss";
+
+/* --------------------- NAVIGATION MENU --------- */
+
+@import "app/sass/phone/navigation.scss";
+
+/* --------------------- MAIN SECTION --------------- */
+
+@import "app/sass/phone/main-page.scss";
+@import "app/sass/phone/slider.scss";
+
+/* --------------------- SERVICES SECTION ---------------- */
+
+@import "app/sass/phone/services.scss";
+@import "app/sass/phone/services-bar.scss";
+
+/* --------------------- ABOUT US SECTION ---------------- */
+
+@import "app/sass/phone/about.scss";
+@import "app/sass/phone/slider2.scss";
+
+/* --------------------- FEEDBACK SECTION ---------------- */
+
+@import "app/sass/phone/feedback.scss";
+@import "app/sass/phone/slider3.scss";
+
+/* --------------------- ARTICLES SECTION ---------------- */
+
+@import "app/sass/phone/articles.scss";
+
+/* --------------------- FOOTER SECTION ---------------- */
+
+@import "app/sass/phone/footer.scss";
