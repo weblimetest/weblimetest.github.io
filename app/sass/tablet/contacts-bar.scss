@@ -1,0 +1,52 @@
+.contacts-bar {
+	@include flexbox (flex-start, center);
+	@include text (12px, 300, $color3)
+	height: 100%;
+
+	&__item {
+		@include flexbox (flex-start, center);
+		height: 100%;
+		text-align: center;
+		margin-right: 32px;
+
+		& a:hover {
+			color: #0f745f;
+		}
+	}
+
+	&__img {
+		margin-right: 16px;
+
+		&--hov {
+			display: $n;
+		}
+	}
+
+	&__button {
+		@include flexbox (center, center);
+		width: 232px;
+		height: 100%;
+		background-color: $color2;
+		margin-left: auto;
+		
+		
+		&:hover {
+			background-color: $color6;
+		}
+
+		&:hover .contacts-bar__img--hov {
+			display: inline;
+		}
+
+		&:hover .contacts-bar__img--but {
+			display: $n;
+			background-color: $color6;
+		}
+	}
+
+	& a {
+		color: $color3;
+		text-decoration: none;
+	}
+}
+

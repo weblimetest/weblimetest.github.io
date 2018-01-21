@@ -1,0 +1,49 @@
+/* --------------------- HELPERS ----------------- */
+
+@import "helpers/variables.scss";
+@import "helpers/mixins.scss";
+@import "helpers/fonts.scss";
+
+/* --------------------- COMMON ------------------ */
+
+@import "app/sass/desktop/container.scss";
+@import "app/sass/desktop/common-styles.scss";
+@import "app/sass/desktop/button.scss";
+
+
+/* --------------------- HEADER ------------------ */
+
+@import "app/sass/desktop/header.scss";
+@import "app/sass/desktop/contacts-bar.scss";
+
+/* --------------------- NAVIGATION MENU --------- */
+
+@import "app/sass/desktop/navigation.scss";
+
+/* --------------------- MAIN SECTION --------------- */
+
+@import "app/sass/desktop/main-page.scss";
+@import "app/sass/desktop/slider.scss";
+
+/* --------------------- SERVICES SECTION ---------------- */
+
+@import "app/sass/desktop/services.scss";
+@import "app/sass/desktop/services-bar.scss";
+
+/* --------------------- ABOUT US SECTION ---------------- */
+
+@import "app/sass/desktop/about.scss";
+@import "app/sass/desktop/slider2.scss";
+
+/* --------------------- FEEDBACK SECTION ---------------- */
+
+@import "app/sass/desktop/feedback.scss";
+@import "app/sass/desktop/slider3.scss";
+
+/* --------------------- ARTICLES SECTION ---------------- */
+
+@import "app/sass/desktop/articles.scss";
+
+/* --------------------- FOOTER SECTION ---------------- */
+
+@import "app/sass/desktop/footer.scss";

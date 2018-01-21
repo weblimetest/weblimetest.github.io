@@ -1,0 +1,9 @@
+.services {
+	padding-top: 56px;
+	background: #f2f2f2;
+
+	&__title {
+		@include text (32px, 300, $color4);
+		margin-bottom: 32px;
+	}
+}

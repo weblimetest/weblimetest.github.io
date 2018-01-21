@@ -1,0 +1,35 @@
+.navigation {
+	position: sticky;
+	top: 0;
+	z-index: 9999;
+	padding-top: 15px;
+}
+
+.navigation-bar {
+	@include flexbox (flex-start, flex-start);
+
+	&__item {
+		@include text (14px, 300, $color3);
+		text-decoration: none;
+		margin-right: 32px;
+
+		&:hover {
+			color: $color2;
+		}
+	}
+
+	&__item:last-child {
+		margin-right: 0;
+	}
+}
+
+
+@media screen and (max-width: 1024px) {
+	.navigation-bar {
+		@include flexbox (space-between, flex-start);
+
+		&__item {
+			margin-right: 0;
+		}
+	}
+}	

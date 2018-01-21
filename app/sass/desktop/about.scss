@@ -1,0 +1,25 @@
+.about {
+	background: url("../../img/about-dark.jpg") no-repeat;
+	background-size: cover;
+	padding-top: 56px;
+	height: 344px;
+
+	&__container {
+		position: relative;
+		height: 100%;
+	}
+
+	&__title {
+		@include text (32px, 300, $color3);
+		margin-bottom: 53px;
+	}
+
+}
+
+@media screen and (max-width: 960px) {
+	.about {
+		&__title {
+			text-align: center;
+		}
+	}	
+}	

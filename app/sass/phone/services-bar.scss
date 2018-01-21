@@ -1,0 +1,53 @@
+.services-bar {
+	width: 100%;
+	@include flexbox (flex-start, flex-start);
+	flex-wrap: wrap;
+
+	&__item {
+		text-decoration: $n;
+		display: block;
+		@include flexbox (flex-start, center);
+		@include text (18px, 300, $color1);
+		width: 320px;
+		height: 100px;
+		background-color: $color3;
+		margin-right: 32px;
+		margin-bottom: 32px;
+		text-decoration: $n;
+
+		&:nth-child(3n) {
+			margin-right: 0;
+		}
+
+		&:nth-child(n+4) {
+			margin-bottom: 56px;
+		}
+
+		&:hover {
+			background-color: $color4;
+			color: $color3;
+		}
+
+		&:hover .services-bar__img--hov {
+			display: inline;
+		}
+
+		&:hover .services-bar__img--but {
+			display: $n;
+			background-color: #8cc63f;
+		}
+
+	}
+
+	&__img {
+		margin: 0 32px 0 32px;
+
+		&--hov {
+			display: $n;
+		}
+	}
+
+	&__price {
+		@include text (12px, 300, inherit);
+	}	
+}

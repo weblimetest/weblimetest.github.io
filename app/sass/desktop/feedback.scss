@@ -1,0 +1,59 @@
+	.feedback {
+	padding-top: 56px;
+
+	&__container {
+		position: relative;
+		height: 100%;
+	}
+
+	&__title {
+		@include text (32px, 300, $color4);
+		margin-bottom: 32px;
+	}
+
+	&__options {
+		@include flexbox (flex-start, $n);
+	}
+
+	&__button--green{
+		color: $color3;
+		background-color: $color2;
+		margin-right: 32px;
+		margin-bottom: 32px;
+		transition: background-color 0.1s ease-in;	
+
+		&:hover {
+			background-color: $color6;
+		}
+	}
+
+	&__button--gray{
+		color: $color1;
+		border: 1px solid $color1;
+		margin-bottom: 56px;
+		transition: background-color 0.1s ease-in;
+
+		&:hover {
+			background-color: $color7;
+		}
+	}
+}
+
+@media screen and (max-width: 960px) {
+	.feedback {
+		&__title {
+			text-align: center;
+		}
+	}	
+}
+
+@media screen and (max-width: 720px) {
+	.feedback__options {
+		@include flexbox (space-around, flex-start);
+		flex-wrap: wrap;
+	}
+
+	.feedback__button--green {
+		margin-right: 0;
+	}
+}	

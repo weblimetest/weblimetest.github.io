@@ -1,0 +1,25 @@
+/* --------- Flex continer basic properties -----------*/
+
+@mixin flexbox ($jc, $ai) {
+	display: flex;
+	justify-content: $jc;
+	align-items: $ai;
+}
+
+/*------------------ Text properties ------------------*/
+
+@mixin text ($font-size, $font-weight, $color) {
+	font-size: $font-size;
+	font-weight: $font-weight;
+	color: $color;
+}
+
+/*------------------ Position properties ------------------*/
+
+@mixin position ($position, $top, $right, $bottom, $left) {
+	position: $position;
+	top: $top;
+	right: $right;
+	bottom: $bottom;
+	left: $left;
+}

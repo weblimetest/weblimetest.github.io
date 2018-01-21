@@ -1,0 +1,8 @@
+.button {
+	@include text (12px, 300, $color3);
+	@include flexbox (center, center);
+	box-sizing: border-box;
+	text-decoration: $n; 
+	width: 232px;
+	height: 60px;
+}

@@ -1,0 +1,100 @@
+.articles {
+	background-color: $color7;
+	padding-top: 56px;
+	padding-bottom: 56px;
+
+	&__title {
+		@include text (32px, 300, $color4);
+		margin-bottom: 32px;
+	}
+
+	&__wrap {
+		@include flexbox (space-between, $n);
+		margin-bottom: 32px;
+	}
+	&__item {
+		width: 320px;
+		background-color: $color3;
+	}
+
+	&__img {
+		margin-bottom: 32px;
+	}
+
+	&__content {
+		margin-left: 32px;
+		width: 80%;
+		margin-bottom: 32px;
+	}
+
+	&__name {
+		@include text (24px, 300, $color1);
+		margin-bottom: 30px;
+
+		&:hover {
+			color: $color4;
+			cursor: pointer;
+		}
+	}
+
+	&__text {
+		@include text (14px, 300, $color1);
+		margin-bottom: 32px;
+		height: 67px;
+	}
+
+	&__link {
+		@include text (12px, 300, $color1);
+		margin-bottom: 32px;
+		text-decoration: $n;
+		border-bottom: 1px solid $color4;
+
+		&:hover {
+			border: $n;
+			color: $color4;
+		}
+	}
+
+	&__button {
+		@include text (12px, 300, $color1);
+		width: 320px;
+		border: 1px solid $color4;
+		margin: 0 auto;
+		transition: background-color 0.1s ease-in,
+					color 0.1s ease-in;
+
+		&:hover {
+			color: $color3;
+			background-color: $color4;
+		}
+	}
+}
+
+@media screen and (max-width: 1023px) {
+	.articles__wrap {
+		@include flexbox (space-between, center);
+		flex-direction: column;
+	}
+
+	.articles__item:nth-child(-n+2) {
+			margin-bottom: 32px;
+	}
+
+	.articles__title {
+		text-align: center;
+	}
+
+
+}
+
+@media screen and (max-width: 350px) {
+	.articles {
+		&__item {
+	
+		}
+
+		&__button {
+			width: 100%;
+		}
+	}
+}

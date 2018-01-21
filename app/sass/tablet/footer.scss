@@ -1,0 +1,61 @@
+.footer {
+	background-color: $color1;
+
+	&__row {
+		@include flexbox (flex-start, $n);
+		padding: 40px 0 40px 0;
+		border-bottom: 1px solid #999999;
+	}
+
+	&__navigation-bar {
+		@include flexbox (flex-start, flex-start);
+
+		&-item {
+			@include text (14px, 300, #999999);
+			text-decoration: none;
+			margin-right: 15px;
+
+			&:hover {
+				color: $color3;
+			}
+		}
+	}
+
+	&__socials {
+		@include flexbox (flex-start, center);
+		margin-left: auto;
+	}
+
+	&__icon:nth-child(-n+3) {
+			margin-right: 32px;
+
+			&:hover .footer__img--hov {
+				display: inline;
+			}
+
+			&:hover .footer__img--main {
+				display: $n;
+			}
+		}
+
+	&__img--hov {
+		display: $n;
+	}
+
+	&__copyright {
+		@include flexbox (space-between, center);
+		padding: 40px 0 40px 0;
+	}
+
+	&__string {
+		@include text (14px, 300, #999999);
+	}	
+
+	&__link {
+		@include text (14px, 300, #999999);
+
+		&:hover {
+			color: $color3;
+		}
+	}	
+}

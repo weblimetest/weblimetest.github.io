@@ -1,0 +1,104 @@
+.slider2 {
+	position: absolute;
+	height: 47%;
+	z-index: 2;
+
+	&__overflow {
+		width: 100%;
+		height: 100%;	
+		overflow: hidden;
+	}
+
+	&__box {
+		@include flexbox (flex-start, flex-start); 
+		height: 100%;
+		width: 300%;
+		transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+	}
+
+	&__item {
+		flex-basis: 33.33%;
+		height: 100%;
+	}
+
+	&__text {
+		@include text (18px, 300, $color3);
+	}
+
+	&__controls { 
+		margin: -14% 0 0 0;
+		width: 100%;
+		height: 30px;
+
+		label {
+			cursor: pointer;
+		}
+	}
+
+	&__dots	{
+		width: 85px;
+		height: 20px;
+		margin-top: 13%;
+		margin-left: 5%;
+
+		label {
+			display: inline-block;
+			width: 10px;
+			height: 10px;
+			border-radius: 50%;
+			border: 1px solid $color3;
+
+			&:hover {
+				cursor: pointer;
+			}
+		}
+	}
+}	
+
+
+/* ------------- SLIDER'S DEPENDENCIES EXPRESSED IN TERMS OF ID'S -------------- */
+#slider2__switch1,#slider2__switch2,#slider2__switch3 {
+	display: $n;
+}
+#slider2__window {
+	width: 90%;
+	height: 100%;
+	margin: 0 auto;
+}
+
+#slider2__switch1:checked ~ .slider2__controls label:nth-child(2),
+#slider2__switch2:checked ~ .slider2__controls label:nth-child(3),
+#slider2__switch3:checked ~ .slider2__controls label:nth-child(1) {
+	background: url("../../img/SVG/arrow-3rd-screen-left.svg") no-repeat;
+	float: left;
+	display: block;
+	width: 35px;
+	height: 35px;
+}
+
+#slider2__switch1:checked ~ .slider2__controls label:nth-child(3), 
+#slider2__switch2:checked ~ .slider2__controls label:nth-child(1),
+#slider2__switch3:checked ~ .slider2__controls label:nth-child(2) {
+	background: url("../../img/SVG/arrow-3rd-screen-right.svg") no-repeat;
+	float: right;
+	display: block;
+	width: 35px;
+	height: 35px;
+}
+
+#slider2__switch1:checked ~ #slider2__window .slider2__box {
+	margin-left: 0;
+}
+#slider2__switch2:checked ~ #slider2__window .slider2__box {
+	margin-left: -100%;
+}
+#slider2__switch3:checked ~ #slider2__window .slider2__box {
+	margin-left: -200%;
+}
+
+#slider2__switch1:checked ~ .slider2__dots label:nth-child(1),
+#slider2__switch2:checked ~ .slider2__dots label:nth-child(2),
+#slider2__switch3:checked ~ .slider2__dots label:nth-child(3) {
+	background: $color3;
+	border-color: $color3;
+}	 
