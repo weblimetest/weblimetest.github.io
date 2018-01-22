@@ -98,8 +98,7 @@ gulp.task('buildJs', ()=> {
             use: [pngquant()],
             interlaced: true
         })))
-        .pipe(gulp.dest(path.dest.img)) 
-        .pipe(reload({stream: true})); 
+        .pipe(gulp.dest(path.dest.img))  
 }); 
 
 // Destination folder clearance task
